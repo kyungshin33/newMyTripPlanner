@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:elevation="10dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        tools:layout_editor_absoluteX="10dp">
+        <ImageButton
+            android:id="@+id/buttonPre_contents"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="clip_horizontal|center|left"
+            android:background="@android:color/transparent"
+            app:srcCompat="?attr/homeAsUpIndicator" />
+
+        <EditText
+            android:id="@+id/input_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="제목을 입력해주세요."
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="다음" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/add_iamges_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+
+        </androidx.viewpager2.widget.ViewPager2>
+
+        <EditText
+            android:id="@+id/input_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="내용을 입력해주세요."
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</LinearLayout>
